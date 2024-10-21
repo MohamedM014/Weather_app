@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:weather/screens/home_screen.dart';
+import 'package:weather/services/weather_service.dart';
 
 
 void main() {
@@ -11,12 +13,16 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Weather App Egypt',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+    return ChangeNotifierProvider<WeatherService>( // Specify the type argument
+      create: (_) => WeatherService(),
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'Weather App',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        home: const Home(),
       ),
-      home: Home(),
     );
   }
 }
