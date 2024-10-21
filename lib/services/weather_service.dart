@@ -1,10 +1,9 @@
-// services/weather_service.dart
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import '../models/weather_model.dart';
 
 class WeatherService {
-  final String apiKey = 'c77f1e5fd20b09bfc10ccfadf8d6f029'; // Replace with your OpenWeatherMap API key
+  final String apiKey = 'c77f1e5fd20b09bfc10ccfadf8d6f029'; 
   final String baseUrl = 'https://api.openweathermap.org/data/2.5/weather?q=Cairo,EG&appid=c77f1e5fd20b09bfc10ccfadf8d6f029&units=metric';
 
   Future<WeatherModel> fetchWeather(String cityName) async {

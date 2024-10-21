@@ -20,11 +20,11 @@ class WeatherModel {
   factory WeatherModel.fromJson(Map<String, dynamic> json) {
     return WeatherModel(
       cityName: json['name'],
-      temperature: json['main']['temp'] - 273.15, // تحويل من كيلفن إلى سلزيوس
+      temperature: json['main']['temp'] - 273.15,
       description: json['weather'][0]['description'],
       windSpeed: json['wind']['speed'],
       humidity: json['main']['humidity'],
-      maxTemp: json['main']['temp_max'] - 273.15, // تحويل من كيلفن إلى سلزيوس
+      maxTemp: json['main']['temp_max'] - 273.15,
       icon: json['weather'][0]['icon'],
     );
   }

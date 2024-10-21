@@ -1,4 +1,3 @@
-// widgets/weather_card.dart
 import 'package:flutter/material.dart';
 
 class WeatherCard extends StatelessWidget {
