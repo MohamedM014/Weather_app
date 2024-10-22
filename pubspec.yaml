@@ -37,6 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.8
   http: ^1.2.2
   provider: ^6.1.2
+  weather_icons: ^3.0.0
 
 dev_dependencies:
   flutter_test:
@@ -68,6 +69,8 @@ assets:
      - assets/weather/forecast1.png
      - assets/weather/forecast2.png
      - assets/weather/forecast3.png
+     - assets/icons/sunny.png
+     - assets/icons/cloudy.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
